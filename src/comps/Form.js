@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import Progress from './Progress';
 
 const Form = () => {
 
@@ -26,6 +27,7 @@ const Form = () => {
             <div className="output">
                 { error && <div className="error">{ error }</div> }
                 { file && <div>{ file.name }</div> }
+                { file && <Progress file={file} setFile={setFile} /> }
             </div>
         </form>
 
