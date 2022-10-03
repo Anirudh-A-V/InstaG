@@ -106,11 +106,6 @@ label:hover {
   left: 0;
 }
 
-.img-wrap:hover {
-  opacity: 1;
-  /* transition-delay: 0.1s; */
-}
-
 /* modal styles */
 
 .backdrop {
