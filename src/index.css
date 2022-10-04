@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
 
 :root {
-  --primary: #efb6b2;
+  --primary: #729eec;
   --secondary: #4e4e4e;
-  --error: #ff4a4a;
+  --error: #fc3636;
 }
 
 /* base styles & title */
@@ -100,7 +100,7 @@ label:hover {
 .img-wrap img {
   min-width: 100%;
   min-height: 100%;
-  max-width: 150%;
+  max-width: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -122,12 +122,12 @@ label:hover {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) !important;
   max-width: 60%;
   max-height: 80%;
-  margin: 60px auto;
+  /* margin: 60px auto; */
   box-shadow: 3px 5px 7px rgba(0, 0, 0, 0.5);
-  border: 3px solid white;
+  /* border: 3px solid white; */
 }
 
 @media screen and (max-width: 768px) {
