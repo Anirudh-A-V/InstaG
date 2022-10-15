@@ -3,7 +3,7 @@ import useStorage from '../hooks/useStorage';
 import { motion } from 'framer-motion';
 
 const Progress = ({ file, setFile }) => {
-    const { url, progress } = useStorage(file);
+    const { url, progress } = useStorage({file:file, collectionName:'images'});
     console.log(progress, url);
 
     useEffect(() => {
