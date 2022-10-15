@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
 
 :root {
-  --primary: #313bac;
+  --primary: #3c3ced;
   --secondary: #030303;
   --error: #fc3636;
 }
@@ -10,7 +10,7 @@
 body {
   font-family: "Noto Serif";
   color: var(--secondary);
-  background:#dfe3e9;
+  background:#908f8f;
 }
 
 .App {
@@ -24,11 +24,19 @@ body {
   font-size: 1.5rem;
   letter-spacing: 2px;
   font-weight: bold;
+  text-shadow: 0 0 7px #fff,
+  0 0 10px #fff;
+  margin: 20px;
 }
 
 .title h2,
 .title p {
   text-align: center;
+  text-shadow: 0 0 7px #fff,
+  0 0 10px #fff,
+  0 0 21px #fff,
+  0 0 42px #fff,
+  0 0 82px #fff;
 }
 
 .title h2 {
@@ -40,12 +48,14 @@ body {
 form {
   margin: 30px auto 10px;
   text-align: center;
+  
 }
 
 label input {
   height: 0;
   width: 0;
   opacity: 0;
+  
 }
 
 label {
@@ -59,12 +69,30 @@ label {
   color: var(--primary);
   font-weight: bold;
   font-size: 24px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px #9ecaed;
 }
 
 label:hover {
-  background: var(--primary);
+  /* background: var(--primary); */
+  text-shadow: 0 0 7px #fff,
+  0 0 10px #fff,
+  0 0 21px #fff,
+  0 0 27px #fff,
+  0 0 30px #fff,
+  0 0 41px #fff,
+  0 0 62px #fff,
+  0 0 102px #fff,
+  0 0 112px #fff,
+  0 0 122px #fff,
+  0 0 171px #fff;
   color: white;
+  outline: none;
+  border-color: #9ecaed;
+  box-shadow: 0 0 10px #ffffff;
 }
+
+
 
 .output {
   height: 60px;
@@ -98,7 +126,7 @@ label:hover {
   /* padding controls height, will always be perfectly square regardless of width */
   position: relative;
   /* opacity: 0.8; */
-  box-shadow: #fff 0 0 20px;
+  box-shadow: #fff 0 0 10px;
 }
 
 .img-wrap img {
