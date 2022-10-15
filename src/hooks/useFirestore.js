@@ -6,11 +6,9 @@ const useFirestore = (collections) => {
     const [docs, setDocs] = useState([]);
 
     useEffect(() => {
-        // const unsub = projectFirestore.collection(collection)
-        // const collectionRef = collection(projectFirestore, 'images');
         const collectionRef = collection(projectFirestore, collections);
         const q = query(collectionRef, orderBy('createdAt', 'desc'));
-            // .orderBy('createdAt', 'desc')
+            
             const unsubscribe = onSnapshot(q, (snap) => {
                 let documents = [];
                 snap.forEach(doc => {
