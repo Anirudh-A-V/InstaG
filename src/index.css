@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
 
 :root {
-  --primary: #729eec;
-  --secondary: #4e4e4e;
+  --primary: #313bac;
+  --secondary: #030303;
   --error: #fc3636;
 }
 
@@ -10,18 +10,20 @@
 body {
   font-family: "Noto Serif";
   color: var(--secondary);
+  background:#dfe3e9;
 }
 
 .App {
   max-width: 960px;
   margin: 0 auto;
+  
 }
 
 .title h1 {
   color: var(--primary);
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   letter-spacing: 2px;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 .title h2,
@@ -31,7 +33,7 @@ body {
 
 .title h2 {
   margin-top: 60px;
-  font-size: 2.6rem;
+  font-size: 2.7rem;
 }
 
 /* upload form styles */
@@ -86,6 +88,7 @@ label:hover {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 40px;
+  
 }
 
 .img-wrap {
@@ -94,7 +97,8 @@ label:hover {
   padding: 50% 0;
   /* padding controls height, will always be perfectly square regardless of width */
   position: relative;
-  opacity: 0.8;
+  /* opacity: 0.8; */
+  box-shadow: #fff 0 0 20px;
 }
 
 .img-wrap img {
@@ -102,8 +106,14 @@ label:hover {
   min-height: 100%;
   max-width: 100%;
   position: absolute;
+  filter: grayscale(1);
+  transition: all 0.5s ease;
   top: 0;
   left: 0;
+}
+
+.img-wrap:hover img {
+  filter: grayscale(0);
 }
 
 /* modal styles */
