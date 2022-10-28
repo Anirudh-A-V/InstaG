@@ -15,6 +15,7 @@ const ImageGrid = ({ setSelectedImg }) => {
                     onClick={() => setSelectedImg(doc.url)}
                 >
                     <motion.img src={doc.url} alt="uploaded pic"
+                        loading="lazy"
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ delay: 1 }}
