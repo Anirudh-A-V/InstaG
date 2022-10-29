@@ -10,7 +10,7 @@
 body {
   font-family: "Noto Serif";
   color: var(--secondary);
-  background:#908f8f;
+  background:#ffffff;
 }
 
 .App {
@@ -24,19 +24,19 @@ body {
   font-size: 1.5rem;
   letter-spacing: 2px;
   font-weight: bold;
-  text-shadow: 0 0 7px #fff,
-  0 0 10px #fff;
+  text-shadow: 0 0 7px rgb(200, 200, 200),
+  0 0 10px rgb(200, 200, 200);
   margin: 20px;
 }
 
 .title h2,
 .title p {
   text-align: center;
-  text-shadow: 0 0 7px #fff,
+  /* text-shadow: 0 0 7px #fff,
   0 0 10px #fff,
   0 0 21px #fff,
   0 0 42px #fff,
-  0 0 82px #fff;
+  0 0 82px #fff; */
 }
 
 .title h2 {
@@ -74,21 +74,21 @@ label {
 }
 
 label:hover {
-  text-shadow: 0 0 7px #fff,
-  0 0 10px #fff,
-  0 0 21px #fff,
-  0 0 27px #fff,
-  0 0 30px #fff,
-  0 0 41px #fff,
-  0 0 62px #fff,
-  0 0 102px #fff,
-  0 0 112px #fff,
-  0 0 122px #fff,
-  0 0 171px #fff;
-  color: white;
+  text-shadow: 0 0 7px #1c1cb3,
+  0 0 10px #1c1cb3,
+  0 0 21px #1c1cb3,
+  0 0 27px #1c1cb3,
+  0 0 30px #1c1cb3,
+  0 0 41px #1c1cb3,
+  0 0 62px #1c1cb3,
+  0 0 102px #1c1cb3,
+  0 0 112px #1c1cb3,
+  0 0 122px #1c1cb3,
+  0 0 171px #1c1cb3;
+  color: #4848d0;
   outline: none;
   border-color: #9ecaed;
-  box-shadow: 0 0 10px #ffffff;
+  box-shadow: 0 0 10px #1c1cb3;
 }
 
 .output {
